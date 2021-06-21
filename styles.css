@@ -11,7 +11,8 @@ p {
     color: #8b8b8bcc
 }
 body{
-    background-color: #c7e9e4;
+    background-color: #b4e4f3;
+    background-image: url("texturaazul.jpg");
 }
 button {
     background-color: #025157;
@@ -35,6 +36,14 @@ li{
 
 .logo {
     width: 15%;
+}
+
+.fixed-header {
+    position: fixed;
+    background-color: seashell;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .header > *{  /*todos los hijos o los elementos dentro de header tendran ese formato*/
@@ -81,4 +90,34 @@ li{
     margin-left: 25px;
     margin-right: 25px;
 }
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+
+.anuncio{
+    color: #025157;
+    display: inline-flexbox;
+}
+.anuncio h2{
+    font-family: cursive;
+    color:olivedrab;
+}
+.anuncio div{
+    font-family: serif;
+    border-radius: initial;
+    color:rgb(44, 57, 68);
+}
+.anuncio button{
+    border-radius: 5mm;
+    background-color: teal;
+    color: white;
+}
+.anuncio p{
+    color: rgb(44, 57, 68);
+}
+.promo video{
+    margin-right: 20px;
 }
