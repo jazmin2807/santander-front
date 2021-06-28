@@ -1,5 +1,4 @@
 h1 {
-    margin-top: 90px;
     color: rgb(0, 140, 255);
     font-size: 60px;
 }
@@ -7,12 +6,16 @@ h1 {
 h2, h3, h4{
     color: #46484c;
 }
+main {
+    margin-top: 285px;
+    text-align: center;
+}
 p {
     color: #8b8b8bcc
 }
 body{
-    background-color: #b4e4f3;
-    background-image: url("texturaazul.jpg");
+    background-color: #a1d683;
+    /*background-image: url("texturaazul.jpg");*/
 }
 button {
     background-color: #025157;
@@ -44,6 +47,10 @@ li{
     top: 0;
     left: 0;
     right: 0;
+}
+main{
+    margin-top: 285px;
+    text-align: center;
 }
 
 .header > *{  /*todos los hijos o los elementos dentro de header tendran ese formato*/
@@ -121,3 +128,296 @@ li{
 .promo video{
     margin-right: 20px;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.postwork {
+    background-color: #a1d683;
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+}
+
+.postwork .publish p{
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.postwork .publish button, .card-button button{
+    background-color: #025157;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+}
+
+.postwork .publish{
+    flex: 2;
+    padding-right: 100px;
+    
+}
+.postwork .publish h2{
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+}
+
+.postwork .publish img{
+    width: 500px;
+    max-width: 100%;
+}
+.postwork .card {
+    flex: 1; 
+    background-color: #fff;
+}
+.postwork .card .card-div{
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.postwork .card .card-div .company{
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.postwork .card .card-div .company img{
+    max-width: 75%;
+}
+.postwork .card .card-div img{
+    width: 100%;
+    max-height: 16vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-body{
+    flex: 1 1 auto;
+    min-height: 1px;
+}
+.postwork .card .card-div{
+    position: relative;
+}
+.postwork .card .card-div figure{
+    margin-top: 0;
+}
+.postwork .card .card-body h4{
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+.postwork .card .card-body h3{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.postwork .card .card-body .results{
+    display: flex;
+    align-items: center;
+    color: #828282;
+}
+.postwork .card .card-body .results img{
+    width: 26px;
+    margin-right: 20px;
+}
+.postwork .card .card-body .card-button{
+    margin-bottom: 20px;
+    background-color: unset;
+    border-top: unset;
+}
+.postwork .card .card-body .card-button button{
+    display: block;
+    margin-left: 0;
+    font-weight: 600;
+    padding: 12px 20px;
+    width:100%;
+}
+
+.features {
+    display: grid;
+    background-color: #025157;
+    padding: 5%, 10%;
+    /*grid-template-columns: repeat(2, 300px);*/
+    height: 700px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 330px, 330px;
+}
+
+.feature-art {
+    background-color: white;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    /*width: 400px;
+    height: 200px;*/
+    border-radius: 5px;
+    display:flex; 
+    align-items: center;
+    overflow: hidden;
+}
+
+.features .feature-art .content{
+    padding: 30px 20px 40px 40px; 
+    flex: 2; 
+}
+
+.features .feature-art .content > *{
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.features .feature-art .f-image
+{
+    width: 40%;
+    flex: 1;
+    position:relative;
+    right: -50px;
+    height: 80%;
+}
+.features .feature-art .content img{
+    width: 50px;
+}
+
+.features .feature-art .content h3 {
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+  }
+  
+  .features .feature-art .content p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+  }
+  
+  .features .feature-art .content a {
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+.features .feature-art .f-image figure,
+.features .feature-art .f-image img{
+    margin-top: 0;
+    height: 100%;
+}
+
+.how-work {
+    background-color: #fffbf7;
+    padding: 5% 10%;
+    text-align: center;
+  }
+  
+  .how-work .title {
+    color: #025157;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    font-family: "Alegreya", serif;
+    margin-bottom: 8px;
+  }
+  
+  .how-work .description {
+    max-width: 60%;
+    color: #46484c;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  
+  .how-work .description a {
+    color: #67b54b;
+    text-decoration: none;
+  }
+  
+  .how-work button {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 12px 12px 6px 12px;
+    height: 45px;
+    margin-left: 0;
+    border-radius: 8px;
+    margin-top: 6px;
+  }
+  
+  .how-work .steps {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .how-work .steps .card-step {
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+  }
+  
+  .how-work .steps .card-step .card-step-image {
+    position: relative;
+    height: 350px;
+  }
+  
+  .how-work .steps .card-step .card-step-image .card-step-icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 21px;
+  }
+  
+  .how-work .steps .card-step .card-step-image .card-step-bg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .how-work .steps .card-step .card-step-body {
+    padding: 25px;
+  }
+  
+  .how-work .steps .card-step .card-step-body h3 {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Alegreya", serif;
+    color: #025157;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .how-work .steps .card-step .card-step-body p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #46484c;
+    font-weight: 400;
+    height: 85px;
+    margin-bottom: 16px;
+  }
+  
+  .how-work .steps .card-step .card-step-body a {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+  }
